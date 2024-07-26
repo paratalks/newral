@@ -8,7 +8,7 @@ export default {
 
     extend: {
         fontSize: {
-            'xs' : '0.5rem'
+            'xs' : '0.6rem'
         },
 
         colors: {

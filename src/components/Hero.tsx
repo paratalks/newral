@@ -48,7 +48,7 @@ const Hero = () => {
                 Presence With Newral
               </h1>
               <p id="hero-slogan" className="hero-slogan -translate-y-20">
-                We focus on creating meaningful experiences that resonate <br />
+                We focus on creating meaningful experiences that resonate {window.outerWidth > 480 ? <br /> : <> </>}
                 with your audience and Brand.
               </p>
             </div>
