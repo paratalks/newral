@@ -25,13 +25,13 @@ const NavBar = () => {
       {
         y: -30,
         opacity: 0,
-        stagger:0.3
+        stagger: 0.3,
       },
       {
         y: 0,
         opacity: 1,
         duration: 0.7,
-        stagger:0.3
+        stagger: 0.3,
       },
     );
   });
@@ -51,7 +51,7 @@ const NavBar = () => {
       </div>
       <div
         id="navlist"
-        className="riseAnimation flex flex-2 sm:mx-1 justify-center lg:gap-8 z-10 gap-3 ld:pt-4 pt-2 max-sm:hidden"
+        className="riseAnimation flex flex-2 sm:mx-1 justify-center lg:gap-8 z-10 gap-3 lg:pt-4 pt-2 max-sm:hidden"
       >
         {navLists.map((list, index) => (
           <p
@@ -62,11 +62,10 @@ const NavBar = () => {
           </p>
         ))}
       </div>
-      <div className="riseAnimation flex items-end justify-center max-sm:justify-end z-10 gap-2 max-sm:flex-1 lg:pr-24">
-          <button
-              className="primary-button whitespace-nowrap hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200">
-              Contact Us
-          </button>
+      <div className="riseAnimation flex items-end justify-center max-sm:justify-end z-10 max-sm:pt-5 gap-2 max-sm:flex-1 lg:pr-24">
+        <button className="primary-button whitespace-nowrap max-sm:text-xs hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200">
+          Contact Us
+        </button>
       </div>
     </section>
   );

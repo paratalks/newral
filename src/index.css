@@ -18,7 +18,7 @@ body {
 
 @layer utilities {
   .primary-button {
-    @apply rounded-full bg-primary text-white px-5 py-2;
+    @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center;
   }
   .nav-height {
     @apply h-[calc(100vh-60px)];
