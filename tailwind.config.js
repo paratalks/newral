@@ -7,6 +7,9 @@ export default {
   theme: {
 
     extend: {
+        fontSize: {
+            'xs' : '0.5rem'
+        },
 
         colors: {
             primary: "#1E51DE",

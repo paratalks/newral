@@ -27,10 +27,10 @@ body {
     @apply flex items-center justify-center;
   }
   .hero-title {
-    @apply lg:text-7xl md:text-6xl text-5xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
+    @apply lg:text-7xl md:text-6xl text-3xl max-sm:text-2xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
   }
   .hero-slogan {
-    @apply text-center font-light leading-[3vh];
+    @apply text-center font-light leading-[3vh] max-sm:text-xs;
   }
   .secondary-button{
     @apply rounded-full border text-white px-5 py-2;
