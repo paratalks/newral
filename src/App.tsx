@@ -1,8 +1,8 @@
 import NavBar from "./components/NavBar.tsx";
 import Hero from "./components/Hero.tsx";
 import Highlights from "./components/Highlights.tsx";
-// @ts-ignore
-import { WaterWave } from 'react-water-wave/lib';
+
+import WaterWave from 'react-water-wave';
 
 
 function App() {
