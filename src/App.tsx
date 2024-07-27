@@ -3,6 +3,7 @@ import Hero from "./components/Hero.tsx";
 import Highlights from "./components/Highlights.tsx";
 
 import WaterWave from "react-water-wave";
+import WorkedWith from "./components/WorkWith.tsx";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
             <>
               <NavBar />
               <Hero />
-
+              <WorkedWith />
             </>
           )}
         </WaterWave>

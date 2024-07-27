@@ -52,6 +52,7 @@ export default {
         fira: ["Fira Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         prata:["Prata", "serif"],
+        lora:["Lora", "serif"],
       },
       keyframes: {
         "accordion-down": {

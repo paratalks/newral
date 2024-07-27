@@ -76,23 +76,20 @@
   --radius: 0.5rem;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family:
-          Area N,
-          sans-serif,
-          sans-serif;
-  background-color: #000024;
-  color: #fff;
-}
+
 .navbar-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 @layer utilities {
+  body{
+    @apply font-lora p-0 m-0 bg-[#000024] text-white;
+  }
   .primary-button {
-    @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center;
+    @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center font-[600];
+  }
+  .secondary-button{
+    @apply rounded-full border text-white px-5 py-2 font-[200];
   }
   .nav-height {
     @apply h-[calc(100vh-60px)];
@@ -101,13 +98,11 @@ body {
     @apply flex items-center justify-center;
   }
   .hero-title {
-    @apply lg:text-7xl md:text-6xl text-3xl max-sm:text-2xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
+    @apply lg:text-7xl font-prata font-light md:text-6xl text-3xl max-sm:text-2xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
   }
   .hero-slogan {
     @apply text-center font-light leading-[3vh] max-sm:text-xs;
   }
-  .secondary-button{
-    @apply rounded-full border text-white px-5 py-2;
-  }
+
 
 }
