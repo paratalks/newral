@@ -83,13 +83,13 @@
 
 @layer utilities {
   body{
-    @apply font-lora p-0 m-0 bg-[#000024] text-white;
+    @apply font-poppins p-0 m-0 bg-[#000024] text-white;
   }
   .primary-button {
-    @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center font-[600];
+    @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center font-[500];
   }
   .secondary-button{
-    @apply rounded-full border text-white px-5 py-2 font-[200];
+    @apply rounded-full border text-white px-5 py-2 font-[300];
   }
   .nav-height {
     @apply h-[calc(100vh-60px)];
@@ -98,7 +98,7 @@
     @apply flex items-center justify-center;
   }
   .hero-title {
-    @apply lg:text-7xl font-prata font-light md:text-6xl text-3xl max-sm:text-2xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
+    @apply lg:text-7xl font-light md:text-6xl text-3xl max-sm:text-2xl lg:leading-[11vh] md:leading-[9vh] max-md:mb-10 leading-normal text-center;
   }
   .hero-slogan {
     @apply text-center font-light leading-[3vh] max-sm:text-xs;
