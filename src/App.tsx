@@ -2,12 +2,9 @@ import NavBar from "./components/NavBar.tsx";
 import Hero from "./components/Hero.tsx";
 import Highlights from "./components/Highlights.tsx";
 
-import WaterWave from 'react-water-wave';
-
+import WaterWave from "react-water-wave";
 
 function App() {
-
-
   return (
     <>
       <div>
@@ -16,13 +13,14 @@ function App() {
             <>
               <NavBar />
               <Hero />
+
             </>
           )}
         </WaterWave>
-        <Highlights />
+          <Highlights />
       </div>
     </>
   );
 }
 
-export default App
+export default App;

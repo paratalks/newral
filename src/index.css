@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+  display: none;
+
+}
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,5 +43,43 @@ body {
   }
   .secondary-button{
     @apply rounded-full border text-white px-5 py-2;
+  }
+  .highlight-container{
+    @apply relative overflow-x-hidden font-prata h-[1200vh] whitespace-nowrap;
+  }
+  .highlight-img{
+    @apply w-full h-full object-cover;
+  }
+  .highlight-title{
+    @apply text-[25vw] font-bold text-white text-center text-nowrap whitespace-nowrap m-0;
+  }
+  .highlight-wrapper{
+    @apply  absolute top-0 w-[350vw] h-[80vh] will-change-transform whitespace-nowrap pt-14 max-sm:pt-[50%];
+  }
+
+  .card{
+    @apply absolute w-[300px] h-[300px] max-md:w-[100px] max-md:h-[100px] rounded-2xl overflow-hidden ;
+  }
+  .highlight-photos{
+    @apply w-[500vw] h-[80vh] ;
+  }
+
+  #card-0{
+    @apply top-[60%] left-[25%] ;
+  }
+  #card-1{
+    @apply top-[10%] left-[40%];
+  }
+  #card-3{
+    @apply top-[22%] left-[60%];
+  }
+  #card-4{
+    @apply top-[0%] left-[20%];
+  }
+  .highlight-outro-title{
+    @apply absolute h-[100vh] top-[60vh] w-[100%];
+  }
+  .highlight-outro-title h1 {
+    @apply absolute top-[50%] lg:left-[28%] text-center text-6xl max-sm:text-2xl max-sm:left-[5%] sm:left-[5%] text-white;
   }
 }

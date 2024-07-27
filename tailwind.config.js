@@ -19,6 +19,7 @@ export default {
         fontFamily:{
             fira: ["Fira Sans", "sans-serif"],
             poppins: ["Poppins", "sans-serif"],
+            prata:["Prata", "serif"],
         }
     },
   },

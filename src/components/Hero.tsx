@@ -52,7 +52,7 @@ const Hero = () => {
                 Presence With Newral
               </h1>
               <p id="hero-slogan" className="hero-slogan -translate-y-20">
-                We focus on creating meaningful experiences that resonate {window.outerWidth > 480 ? <br /> : <> </>}
+                We focus on creating meaningful experiences that resonate {window.innerWidth > 480 ? <br /> : <> </>}
                 with your audience and Brand.
               </p>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
               <button className="primary-button max-sm:text-xs flex-row
                 whitespace-nowrap hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200">
                 Quick Connect
-                <img src={tiltedArrow} alt="arrow" className="ml-1 w-[3vh]" />
+                <img src={tiltedArrow} alt="arrow" className="ml-1 w-[3vh] max-sm:hidden" />
               </button>
               <button className="whitespace-nowrap secondary-button max-sm:text-xs ">Learn More</button>
             </div>
