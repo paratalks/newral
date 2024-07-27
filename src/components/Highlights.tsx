@@ -1,4 +1,4 @@
-import { highlights } from "../utils";
+// import { highlights } from "../utils";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -50,18 +50,7 @@ const Highlights = () => {
     <div className="highlight-container">
       <section className="highlight-wrapper">
         <h1 className="highlight-title"> Empowering Business </h1>
-        <div className="highlight-photos">
-          {highlights.map((highlight, index) => (
 
-              <div className="card" key={index} id={`card-${index}`}>
-                <img
-                    src={highlight}
-                    alt={`card-${index}`}
-                    className="highlight-img"
-                />
-              </div>
-          ))}
-        </div>
 
       </section>
       <section className="highlight-outro">

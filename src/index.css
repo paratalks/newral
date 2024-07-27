@@ -51,10 +51,10 @@ body {
     @apply w-full h-full object-cover;
   }
   .highlight-title{
-    @apply text-[25vw] font-bold text-white text-center text-nowrap whitespace-nowrap m-0;
+    @apply text-[20vw] font-bold text-white text-center text-nowrap whitespace-nowrap m-0 sm:pt-10 max-sm:pt-14;
   }
   .highlight-wrapper{
-    @apply  absolute top-0 w-[350vw] h-[80vh] will-change-transform whitespace-nowrap max-sm:pt-[50%];
+    @apply  absolute top-0 w-[300vw] h-[80vh] will-change-transform whitespace-nowrap max-sm:pt-[50%];
   }
 
   .card{
