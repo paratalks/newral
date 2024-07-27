@@ -10,14 +10,79 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
 }
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 215 20.2% 65.1%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --popover: 224 71% 4%;
+  --popover-foreground: 215 20.2% 65.1%;
+
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+
+  --card: 224 71% 4%;
+  --card-foreground: 213 31% 91%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 1.2%;
+
+  --secondary: 222.2 47.4% 11.2%;
+  --secondary-foreground: 210 40% 98%;
+
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 216 34% 17%;
+
+  --radius: 0.5rem;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family:
-    Area N,
-    sans-serif,
-    sans-serif;
+          Area N,
+          sans-serif,
+          sans-serif;
   background-color: #000024;
   color: #fff;
 }
@@ -44,42 +109,5 @@ body {
   .secondary-button{
     @apply rounded-full border text-white px-5 py-2;
   }
-  .highlight-container{
-    @apply relative overflow-x-hidden font-prata h-[1200vh] whitespace-nowrap;
-  }
-  .highlight-img{
-    @apply w-full h-full object-cover;
-  }
-  .highlight-title{
-    @apply text-[20vw] font-bold text-white text-center text-nowrap whitespace-nowrap m-0 sm:pt-10 max-sm:pt-14;
-  }
-  .highlight-wrapper{
-    @apply  absolute top-0 w-[300vw] h-[80vh] will-change-transform whitespace-nowrap max-sm:pt-[50%];
-  }
 
-  .card{
-    @apply absolute w-[300px] h-[300px] max-md:w-[100px] max-md:h-[100px] rounded-2xl overflow-hidden ;
-  }
-  .highlight-photos{
-    @apply w-[500vw] h-[80vh] ;
-  }
-
-  #card-0{
-    @apply top-[60%] left-[25%] ;
-  }
-  #card-1{
-    @apply top-[10%] left-[40%];
-  }
-  #card-3{
-    @apply top-[22%] left-[60%];
-  }
-  #card-4{
-    @apply top-[0%] left-[20%];
-  }
-  .highlight-outro-title{
-    @apply absolute h-[100vh] top-[60vh] w-[100%];
-  }
-  .highlight-outro-title h1 {
-    @apply absolute top-[50%] lg:left-[28%] text-center text-6xl max-sm:text-2xl max-sm:left-[5%] sm:left-[5%] text-white;
-  }
 }
