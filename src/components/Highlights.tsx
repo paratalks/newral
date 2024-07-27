@@ -21,7 +21,7 @@ const Highlights = () => {
 
       onUpdate: (self) => {
         gsap.to(".highlight-wrapper", {
-          x: `${-350 * self.progress}vw`,
+          x: `${-250 * self.progress}vw`,
           duration: 0.5,
           ease: "power3.out",
         });
@@ -38,7 +38,7 @@ const Highlights = () => {
           gsap.to(`#${card.id}`, {
             x: `${card.endTranslateX * self.progress}px`,
             rotate: `${card.rotate * self.progress * 2}`,
-            duration: 0.5,
+            duration: 0.9,
             ease: "power3.out",
           });
         },

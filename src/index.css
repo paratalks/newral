@@ -54,7 +54,7 @@ body {
     @apply text-[25vw] font-bold text-white text-center text-nowrap whitespace-nowrap m-0;
   }
   .highlight-wrapper{
-    @apply  absolute top-0 w-[350vw] h-[80vh] will-change-transform whitespace-nowrap pt-14 max-sm:pt-[50%];
+    @apply  absolute top-0 w-[350vw] h-[80vh] will-change-transform whitespace-nowrap max-sm:pt-[50%];
   }
 
   .card{
