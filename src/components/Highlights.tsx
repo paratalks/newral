@@ -28,22 +28,22 @@ const Highlights = () => {
       },
     });
 
-    cards.forEach((card, ) => {
-      ScrollTrigger.create({
-        trigger: `#${card.id}`,
-        start: "top top",
-        end: "+=1200vh",
-        scrub: true,
-        onUpdate: (self) => {
-          gsap.to(`#${card.id}`, {
-            x: `${card.endTranslateX * self.progress}px`,
-            rotate: `${card.rotate * self.progress * 2}`,
-            duration: 0.9,
-            ease: "power3.out",
-          });
-        },
-      });
-    });
+    // cards.forEach((card, ) => {
+    //   ScrollTrigger.create({
+    //     trigger: `#${card.id}`,
+    //     start: "top top",
+    //     end: "+=1200vh",
+    //     scrub: true,
+    //     onUpdate: (self) => {
+    //       gsap.to(`#${card.id}`, {
+    //         x: `${card.endTranslateX * self.progress}px`,
+    //         rotate: `${card.rotate * self.progress * 2}`,
+    //         duration: 0.9,
+    //         ease: "power3.out",
+    //       });
+    //     },
+    //   });
+    // });
   });
 
   return (
