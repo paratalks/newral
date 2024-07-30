@@ -38,7 +38,13 @@ const NavBar = () => {
   return (
     <section className="w-full flex sm:py-10 py-5 sm:px-10 px-7 justify-between items-center">
       <div className="absolute top-0 left-0 -z-10">
-        <img src={topElipse} alt="eclipse" className="blur-md" width={1000} height={1250} />
+        <img
+          src={topElipse}
+          alt="eclipse"
+          className="blur-md"
+          width={1000}
+          height={1250}
+        />
       </div>
       <div className="logo flex flex-2 lg:pl-24 z-10 riseAnimation md:justify-end">
         <img

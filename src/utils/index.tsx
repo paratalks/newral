@@ -9,6 +9,7 @@ import workwith1 from "../assets/images/workedwith/company1.png";
 import workwith2 from "../assets/images/workedwith/company2.png";
 import workwith3 from "../assets/images/workedwith/company3.png";
 import workwith4 from "../assets/images/workedwith/company4.png";
+import services1 from "../assets/images/expertise/services1.svg";
 
 // logos
 // export const darkLogo = dark;
@@ -23,3 +24,5 @@ export const company1 = workwith1;
 export const company2 = workwith2;
 export const company3 = workwith3;
 export const company4 = workwith4;
+export const servicesImg1 = services1;
+export const smallScreen = window.innerWidth < 640;

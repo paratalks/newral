@@ -4,10 +4,9 @@
 
 *::-webkit-scrollbar {
   display: none;
-
 }
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
 :root {
@@ -76,19 +75,22 @@
   --radius: 0.5rem;
 }
 
-
 .navbar-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.34);
 }
+.card-background {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
+}
 
 @layer utilities {
-  body{
+  body {
     @apply font-poppins p-0 m-0 bg-[#000024] text-white;
   }
   .primary-button {
     @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center font-[500];
   }
-  .secondary-button{
+  .secondary-button {
     @apply rounded-full border text-white px-5 py-2 font-[300];
   }
   .nav-height {
@@ -104,5 +106,26 @@
     @apply text-center font-light leading-[3vh] max-sm:text-xs;
   }
 
+  .services-container {
+    @apply mt-52 max-sm:mt-48 flex-col sm:gap-14 gap-10 sm:py-14 py-10 bg-gray-900/[0.3] sm:px-32 px-24;
+  }
+  .section-text-wrapper {
+    @apply flex flex-col gap-5 items-center justify-center;
+  }
+  .section-heading {
+    @apply sm:text-5xl text-4xl max-sm:text-3xl font-[700] text-center;
+  }
+  .section-desc {
+    @apply text-center max-sm:text-xs font-[200] lg:w-[60%] md:w-[90%] ;
+  }
+  .workedwith-desc {
+    @apply text-center max-sm:text-xs font-light;
+  }
 
+  .services-tiles {
+  }
+
+  .services-card{
+    @apply bg-primary/[0.3] border-[0.5px] text-white py-6 px-5 flex flex-col gap-2 w-[20vw] h-[20rem] rounded-3xl;
+  }
 }
