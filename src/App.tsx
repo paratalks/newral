@@ -3,7 +3,10 @@ import Hero from "./components/Hero.tsx";
 
 import WaterWave from "react-water-wave";
 import WorkedWith from "./components/WorkWith.tsx";
-import Services from "./components/Services.tsx";
+import Highlights from "./components/Highlights.tsx";
+import Faq from "./components/faq.tsx";
+import Reviews from "./components/Reviews.tsx";
+import ContactUs from "./components/ContactUs.tsx";
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
             </>
           )}
         </WaterWave>
-          <Services />
+          <Highlights />
+          <Faq />
+          <Reviews />
+          <ContactUs />
       </div>
     </>
   );

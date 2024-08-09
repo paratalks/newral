@@ -16,6 +16,7 @@ const Hero = () => {
       delay: 2,
       opacity: 1,
       y: smallDevice ? -100 : -200,
+
     });
     timeline.from("#hero", {
       delay:0.5,

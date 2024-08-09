@@ -8,6 +8,7 @@
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+
 }
 :root {
   --background: 0 0% 100%;
@@ -75,6 +76,7 @@
   --radius: 0.5rem;
 }
 
+
 .navbar-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.34);
 }
@@ -83,9 +85,16 @@
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%);
 }
 
+#card-arrow {
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
 @layer utilities {
   body {
-    @apply font-poppins p-0 m-0 bg-[#000024] text-white;
+    @apply font-poppins p-0 m-0 bg-[#000024] text-white overflow-x-hidden;
   }
   .primary-button {
     @apply rounded-full bg-primary text-white px-5 py-2 flex items-center justify-center font-[500];
@@ -95,6 +104,9 @@
   }
   .nav-height {
     @apply h-[calc(100vh-60px)];
+  }
+  .AccordionItem[data-state='open']{
+  @apply bg-primary;
   }
   .flex-center {
     @apply flex items-center justify-center;
@@ -107,25 +119,28 @@
   }
 
   .services-container {
-    @apply mt-52 max-sm:mt-48 flex-col sm:gap-14 gap-10 sm:py-14 py-10 bg-gray-900/[0.3] sm:px-32 px-24;
+    @apply mt-32 max-sm:mt-24 flex-col sm:gap-14 gap-10 sm:py-14 py-10 ;
   }
-  .section-text-wrapper {
-    @apply flex flex-col gap-5 items-center justify-center;
-  }
-  .section-heading {
-    @apply sm:text-5xl text-4xl max-sm:text-3xl font-[700] text-center;
-  }
-  .section-desc {
-    @apply text-center max-sm:text-xs font-[200] lg:w-[60%] md:w-[90%] ;
-  }
+
+
   .workedwith-desc {
     @apply text-center max-sm:text-xs font-light;
   }
 
-  .services-tiles {
-  }
 
   .services-card{
-    @apply bg-primary/[0.3] border-[0.5px] text-white py-6 px-5 flex flex-col gap-2 w-[20vw] h-[20rem] rounded-3xl;
+    @apply bg-primary/[0.2] border-[0.5px] text-white py-4 px-5 flex flex-col gap-5 w-80 h-auto rounded-3xl;
+  }
+  .card-header{
+    @apply flex flex-col gap-2 items-start justify-start p-0
+  }
+  .card-content{
+    @apply  flex flex-row flex-wrap gap-2 whitespace-nowrap;
+  }
+  .card-footer{
+    @apply w-full flex items-center justify-center;
+  }
+  .services-tiles{
+    @apply flex sm:flex-row flex-col sm:flex-wrap  sm:gap-6 gap-4 items-center justify-center;
   }
 }
