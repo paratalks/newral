@@ -1,7 +1,6 @@
 import Services from "./Services.tsx";
 import {midElipse} from "../utils";
 import Projects from "./Projects.tsx";
-import Faq from "./faq.tsx";
 
 const Highlights = () => {
     return (

@@ -6,8 +6,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+
 } from "./ui/carousel";
 
 const Projects = () => {
