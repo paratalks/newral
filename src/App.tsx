@@ -7,6 +7,7 @@ import WorkedWith from "./components/WorkWith.tsx";
 import Highlights from "./components/Highlights.tsx";
 import Reviews from "./components/Reviews.tsx";
 import ContactUs from "./components/ContactUs.tsx";
+import { Footer } from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
             </>
           )}
         </WaterWave>
-          <Highlights />
-          <Faq />
-          <Reviews />
-          <ContactUs />
+        <Highlights />
+        <Faq />
+        <Reviews />
+        <ContactUs />
+        <Footer />
       </div>
     </>
   );

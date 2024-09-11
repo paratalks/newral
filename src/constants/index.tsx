@@ -1,6 +1,13 @@
 import { servicesImg1 } from "../utils";
 
-export const navLists = ["Home", "Services", "Our Work", "Reviews", "Events"];
+export const navLists = [
+  { title: "Home", path: "home" },
+  { title: "Services", path: "services" },
+  { title: "Our Work", path: "projects" },
+  { title: "Reviews", path: "reviews" },
+  { title: "Events", path: "events" },
+];
+
 export const serviceCards = [
   {
     title: "Designing",
@@ -84,46 +91,52 @@ export const reviews = [
     review:
       "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
-]
+];
 export const reviews2 = [
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
   {
     name: "Yash",
     review:
-        "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
   },
-]
+];
+export const contactDetails = {
+  contactEmail: "contact@newral.in",
+  contactPhone: "+91 7080682448",
+  contactAddress:
+    "223, Tower B , i-thum Bulding,\n Sector 62, Noida,\n Near Electronic City Metro, 201309",
+};

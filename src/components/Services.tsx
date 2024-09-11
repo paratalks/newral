@@ -5,12 +5,16 @@ import { lazy } from "react";
 const SkillCard = lazy(() => import("./skillCard.tsx"));
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Services = () => {
   return (
-    <div className="services-container flex-center text-center relative overflow-hidden">
+    <div
+      id={"services"}
+      className="services-container flex-center text-center relative overflow-hidden"
+    >
       <div className="flex flex-col gap-5 items-center justify-center">
-        <h1 className="sm:text-5xl text-4xl  font-[700] text-center text-nowrap">Our Expertise</h1>
+        <h1 className="sm:text-5xl text-4xl  font-[700] text-center text-nowrap">
+          Our Expertise
+        </h1>
         <p className="text-center max-sm:text-xs font-[200] lg:w-[60%] md:w-[90%]">
           From concept to execution, we empower your brand with design and
           development that'll drive business growth.
@@ -25,7 +29,6 @@ const Services = () => {
             key={index}
           />
         ))}
-
       </div>
     </div>
   );
