@@ -52,86 +52,40 @@ export const serviceCards = [
 
 export const reviews = [
   {
-    name: "Yash",
+    name: "Abhimayu Kumawat - Founder, OTT Bharat, NEETKakaJEE",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "Yash and his team built our OTT Bharat app with precision and professionalism. Their team delivered a user-friendly platform. And Now they are handling tech of NeetKakaJEE ( the parent company )",
+  },
+  {
+    name: "Sameer Bansal – Founder, Bansal Classes",
+    review:
+      "Newral played a pivotal role in upgrading our tech infrastructure at Bansal Classes. Their expertise in software development helped handling our operations which was great experience for our students",
   },
   {
     name: "Yash",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "Kushagra - Tech Lead, Level Supermind" +
+      "Newral helped us overcome significant challenges in our app and website, identifying and resolving deeply rooted issues that were hard to detect. Their sharp problem-solving skills helped a Lot\n",
   },
   {
-    name: "Yash",
+    name: "Prince Sir – Founder, KotaMentrs",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "Newral played a pivotal role in upgrading our tech infrastructure at Bansal Classes. Their expertise in software development helped handling our operations, a great experience for our students.",
   },
   {
-    name: "Yash",
+    name: "Mohit Tyagi - Founder, Competishun",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "Newral created some Landing pages for Competishun. They captured our vision perfectly, delivering a great design with a quick turnaround. Highly recommend their web development expertise",
   },
   {
-    name: "Yash",
+    name: "Puneet Arora - Founder, Autofurnish",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "They helped us fix an issue which helped us serve us software to our clients, and they were happy when the issue got resolve because of Newral.",
   },
   {
-    name: "Yash",
+    name: "Abhimayu Kumawat - Founder, OTT Bharat, NEETKakaJEE",
     review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-];
-export const reviews2 = [
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
-  },
-  {
-    name: "Yash",
-    review:
-      "CSExplained is really a lovely community. I’ve learned many skills and networked with many people because of the community. Keep up the good work.",
+      "Yash and his team built our OTT Bharat app with precision and professionalism. And Now they are handling tech of NeetKakaJEE ( the parent company )",
   },
 ];
 export const contactDetails = {

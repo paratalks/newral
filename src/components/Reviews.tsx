@@ -2,7 +2,7 @@ import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel.tsx";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { pfpImg } from "../utils";
 import ReviewCard from "./ReviewCard.tsx";
-import { reviews, reviews2 } from "../constants";
+import { reviews } from "../constants";
 const Reviews = () => {
   return (
     <section
@@ -68,7 +68,7 @@ const Reviews = () => {
             className="w-full "
           >
             <CarouselContent className="">
-              {reviews2.map((review, index) => (
+              {reviews.map((review, index) => (
                 <>
                   <CarouselItem key={index} className="md:basis-1/6">
                     <ReviewCard

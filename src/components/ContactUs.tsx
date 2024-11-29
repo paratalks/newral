@@ -1,7 +1,34 @@
+"use client";
 import { contactUsElipseImg, icons } from "../utils";
 import { contactDetails } from "../constants";
+import { Resend } from "resend";
+import { useState } from "react";
 
 const ContactUs = () => {
+  const resend = new Resend("re_ASRADKq7_CYcwoLDsWbkZheuzovLZNqz1");
+  const [queryData, setQueryData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    resend.emails.send({
+      from: "contact@newral.in",
+      to: "thisform240@gmail.com",
+      subject: "Newral has recieved a query!",
+      html: `Email : ${queryData.email}, \n phone : ${queryData.phone}, \n name : ${queryData.firstName}${queryData.lastName}, message: ${queryData.message}`,
+    });
+    setQueryData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
   return (
     <section
       id={"contactus"}
@@ -84,7 +111,11 @@ const ContactUs = () => {
             <div className={"flex flex-col text-white w-1/2"}>
               <div className="flex items-center justify-center bg-primary/[0.2] p-4 py-6 rounded-3xl border border-primary">
                 <div className="px-2 md:px-12">
-                  <form action="" className="space-y-10">
+                  <form
+                    action=""
+                    className="space-y-10"
+                    onSubmit={handleSubmit}
+                  >
                     <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                       <div className="grid w-full  items-center gap-1.5">
                         <label className="text-sm font-medium leading-none text-gray-200 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
@@ -95,6 +126,12 @@ const ContactUs = () => {
                           type="text"
                           id="first_name"
                           placeholder="First Name"
+                          onChange={(e) => {
+                            setQueryData({
+                              ...queryData,
+                              firstName: e.currentTarget.value,
+                            });
+                          }}
                         />
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
@@ -106,6 +143,12 @@ const ContactUs = () => {
                           type="text"
                           id="last_name"
                           placeholder="Last Name"
+                          onChange={(e) => {
+                            setQueryData({
+                              ...queryData,
+                              lastName: e.currentTarget.value,
+                            });
+                          }}
                         />
                       </div>
                     </div>
@@ -118,6 +161,12 @@ const ContactUs = () => {
                         type="text"
                         id="email"
                         placeholder="Email"
+                        onChange={(e) => {
+                          setQueryData({
+                            ...queryData,
+                            email: e.currentTarget.value,
+                          });
+                        }}
                       />
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
@@ -129,6 +178,12 @@ const ContactUs = () => {
                         type="tel"
                         id="phone_number"
                         placeholder="Phone number"
+                        onChange={(e) => {
+                          setQueryData({
+                            ...queryData,
+                            phone: e.currentTarget.value,
+                          });
+                        }}
                       />
                     </div>
                     <div className="grid w-full  items-center gap-1.5">
@@ -140,10 +195,16 @@ const ContactUs = () => {
                         id="message"
                         placeholder="Leave us a message"
                         cols={30}
+                        onChange={(e) => {
+                          setQueryData({
+                            ...queryData,
+                            message: e.currentTarget.value,
+                          });
+                        }}
                       ></textarea>
                     </div>
                     <button
-                      type="button"
+                      onClick={handleSubmit}
                       className="primary-button whitespace-nowrap max-sm:text-xs hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200 w-full"
                     >
                       Send Message
