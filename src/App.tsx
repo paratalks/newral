@@ -1,12 +1,13 @@
 import NavBar from "./components/NavBar.tsx";
 import Hero from "./components/Hero.tsx";
+import Faq from "./components/Faqs.tsx";
 
 import WaterWave from "react-water-wave";
 import WorkedWith from "./components/WorkWith.tsx";
 import Highlights from "./components/Highlights.tsx";
-import Faq from "./components/faq.tsx";
 import Reviews from "./components/Reviews.tsx";
 import ContactUs from "./components/ContactUs.tsx";
+import { Footer } from "./components/Footer.tsx";
 
 function App() {
   return (
@@ -21,10 +22,11 @@ function App() {
             </>
           )}
         </WaterWave>
-          <Highlights />
-          <Faq />
-          <Reviews />
-          <ContactUs />
+        <Highlights />
+        <Faq />
+        <Reviews />
+        <ContactUs />
+        <Footer />
       </div>
     </>
   );

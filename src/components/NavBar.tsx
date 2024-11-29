@@ -60,18 +60,23 @@ const NavBar = () => {
         className="riseAnimation flex flex-2 sm:mx-1 justify-center lg:gap-8 z-10 gap-3 lg:pt-4 pt-2 max-sm:hidden"
       >
         {navLists.map((list, index) => (
-          <p
-            key={index}
-            className="sm:mx-2 text-sm font-medium whitespace-nowrap text-gray-300 cursor-pointer hover:text-blue-400 transition-all ease-in duration-75"
-          >
-            {list}
-          </p>
+          <a href={`#${list.path}`} className={""}>
+            {" "}
+            <p
+              key={index}
+              className="sm:mx-2 text-sm font-medium whitespace-nowrap text-gray-300 cursor-pointer hover:text-blue-400 transition-all ease-in duration-75"
+            >
+              {list.title}
+            </p>
+          </a>
         ))}
       </div>
       <div className="riseAnimation flex items-end justify-center max-sm:justify-end z-10 max-sm:pt-5 gap-2 max-sm:flex-1 lg:pr-24">
-        <button className="primary-button whitespace-nowrap max-sm:text-xs hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200">
-          Contact Us
-        </button>
+        <a href={"#contactus"}>
+          <button className="primary-button whitespace-nowrap max-sm:text-xs hover:shadow-[-2px_6px_22px_-7px_rgba(0,0,0,1)] drop-shadow-sm hover:shadow-primary transition-shadow ease-linear duration-200">
+            Contact Us
+          </button>
+        </a>
       </div>
     </section>
   );
